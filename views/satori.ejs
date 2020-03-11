@@ -1,0 +1,36 @@
+<!--- remove space before and after--->
+<%var x = 10;
+var tuoi = 15;
+%>
+<%var n="<font color=green>GREEN</font>";%>
+
+<html>
+
+<head>
+
+</head>
+<body>
+    <h1>WELCOME TO SATORI.EJS , from
+        <span style="color: red;font-weight: bold "> views/satori.ejs</span>
+    </h1>
+<h2><%=x%></h2>
+
+<!-- differences between = and  - -->
+<h2><%=n%></h2>
+<h2><%- n%></h2>
+
+<!---dieu kien -->
+<% if(tuoi >= 18) { %>
+<h2>Ban du tuoi roi </h2>}
+<% } else{ %>
+<h2>Ban chua du tuoi </h2>
+<% } %>
+
+<!---tao vong lap -->
+<% for(var i=1; i <=5; i++){%>
+    <h3>Khoa hoc hoc lap trinh nodejs</h3>
+<% } %>
+
+
+</body>
+</html>
